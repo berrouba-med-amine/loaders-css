@@ -1,0 +1,116 @@
+.modal-loader {
+    position: fixed;
+    display: grid;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1000; /* Ensure the modal is on top of other content */
+    cursor: pointer;
+    transition: opacity 0.3s ease; /* Smooth transition */
+  }
+  
+  .imoji {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6rem;
+    /* color: #e74c3c; */
+  }
+  
+  
+  .loading-digts {
+    position: absolute;
+    top: 80%;
+    left: 25%;
+    font-size: 1.2rem;
+    color: #3d3c3c;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  
+  .loading-content {
+    place-self: center;
+    top: 50%;
+    width: 15rem;
+    height: 15rem;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid;
+    pointer-events: none;
+    animation: containerAnimation 3s ease-in-out infinite, colorChange 3s linear infinite;
+  }
+  
+  .loading-bear {
+    border-radius: 50%;
+  }
+  
+  
+  .loading-fuel-pump {
+    border-radius: 10%;
+  }
+  
+  .loading-rocket {
+    border-radius: 10%;
+  }
+  
+  .loading-umbrella {
+    border-radius: 50%;
+  }
+  
+  .loading-party {
+    border-radius: 50%;
+  }
+  
+  .heart {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    font-size: 2.6rem;
+    color: #e74c3c;
+    animation: heartBeat 1.5s ease-in-out infinite, colorChange 5s linear infinite;
+  }
+  
+  
+    
+  
+  @keyframes containerAnimation {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  
+  @keyframes heartBeat {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  
+  @keyframes colorChange {
+    0% {
+      border-color: #808080;
+    }
+    25% {
+      border-color: #936c7c;
+    }
+    50% {
+      border-color: #808080;
+    }
+    75% {
+      border-color: #936c7c;
+    }
+    100% {
+      border-color: #808080;
+    }
+  }
+  
+  
+  
